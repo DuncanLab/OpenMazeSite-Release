@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OpenMaze</title>
+    <!-- resize to mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Import Bootstrap 4 from CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- MDBootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/css/mdb.min.css">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
+     Global site tag (gtag.js) - Google Analytics
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116686393-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-116686393-1');
+    </script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light white">
+    <a class="navbar-brand" href="#"><img src="./img/OM-WebsiteColor.png" height="30" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="./html/documentation.html">Documentation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./html/tutorial.html">Tutorials</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./html/contact.html">Contact</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto">
+            <a href="html/tutorial.html">
+                <button class=" btn btn-sm align-middle btn-danger" type="button">Get Started</button>
+            </a>
+        </ul>
+    </div>
+</nav>
+<!--Carousel Wrapper-->
+<div id="video-carousel" class="video-carousel carousel slide carousel-fade" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+        <li data-target="#video-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#video-carousel" data-slide-to="1"></li>
+        <li data-target="#video-carousel" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner video-carousel" role="listbox">
+        <!-- First slide -->
+        <div class="video-carousel carousel-item active">
+            <!--Mask color-->
+            <div class="view hm-indigo-light">
+                <!--Video source-->
+                <video class="video-fluid" autoplay loop>
+                    <source src="https://dl.dropboxusercontent.com/sh/otosb3zprkqmky5/AAD1e-asZHpAc4u-KT8WqkeSa/Website1.mp4" type="video/mp4" />
+                </video>
+                <div class="full-bg-img"></div>
+            </div>
+
+            <!--Caption-->
+            <div class="carousel-caption">
+                <div class="animated fadeInDown">
+                    <h3 class="h3-responsive">Build Custom Environments Using Unity</h3>
+                </div>
+            </div>
+            <!--Caption-->
+        </div>
+        <!-- /.First slide -->
+
+        <!-- Second slide -->
+        <div class="video-carousel carousel-item">
+            <!--Mask color-->
+            <div class="view hm-indigo-light">
+                <!--Video source-->
+                <video class="video-fluid" autoplay loop>
+                    <source src="https://dl.dropboxusercontent.com/sh/otosb3zprkqmky5/AADmYzOEBIO3JJcsge6JnXbFa/website2.mp4?dl=0" type='video/mp4' />
+                </video>
+                <div class="mask"></div>
+            </div>
+
+            <!--Caption-->
+            <div class="carousel-caption">
+                <div class="animated fadeInDown">
+                    <h3 class="h3-responsive">Customize Your Trials</h3>
+                </div>
+            </div>
+            <!--Caption-->
+        </div>
+        <!-- /.Second slide -->
+
+        <!-- Third slide -->
+        <div class="carousel-item video-carousel">
+            <!--Mask color-->
+            <div class="view hm-indigo-light">
+                <!--Video source-->
+                <video class="video-fluid" autoplay loop>
+                    <source src="https://dl.dropboxusercontent.com/sh/otosb3zprkqmky5/AAAEd3yPITuVMr1WRN-1dOYAa/Website3.mp4?dl=0" type="video/mp4" />
+                </video>
+                <div class="mask"></div>
+            </div>
+
+            <!--Caption-->
+            <div class="carousel-caption">
+                <div class="animated fadeInDown">
+                    <h3 class="h3-responsive">Use 3D or 2D Images</h3>
+                </div>
+            </div>
+            <!--Caption-->
+        </div>
+        <!-- /.Third slide -->
+    </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#video-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#video-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+</div>
+<!--Carousel Wrapper-->
+
+
+<!-- Key Features Cards -->
+<div class="container">
+    <img class="headerText-img" src="./img/How It Works.png" alt="How It works">
+    <div class="row" style="text-align: center">
+        <div class="col-md-4">
+            <!--Card-->
+            <div class="card keyFeaturesContainer">
+
+                <!--Card image-->
+                <div class="view overlay hm-white-light">
+                    <img src="./img/CreateConfig.png" class="img-fluid" alt="">
+                    <a href="#">
+                        <div class="mask"></div>
+                    </a>
+                </div>
+
+                <!--Card content-->
+                <div class="card-body"> 
+                    <!--Title-->
+                    <h4 class="card-title">Create Config File</h4>
+                    <!--Text-->
+                    <p class="card-text">Our experiment configuration file makes it easy to create complex 3D experimental paradigms.</p> 
+                    <a href="#" class="btn btn-default">Get Started</a>
+                </div>
+
+            </div>
+            <!--/.Card-->
+        </div>
+        <div class="col-md-4">
+            <!--Card-->
+            <div class="card keyFeaturesContainer">
+
+                <!--Card image-->
+                <div class="view overlay hm-white-light">
+                    <img src="./img/RunParticipants.jpg" class="img-fluid" alt="">
+                    <a href="#">
+                        <div class="mask"></div>
+                    </a>
+                </div>
+
+                <!--Card content-->
+                <div class="card-body">
+                    <!--Title-->
+                    <h4 class="card-title">Run Participants</h4>
+                    <!--Text-->
+                    <p class="card-text">Running participants is easy in OpenMaze. Use a keyboard, joystick, or even VR!</p>
+                    <a href="#" class="btn btn-default">Get Started</a>
+                </div>
+
+            </div>
+            <!--/.Card-->
+        </div>
+        <div class="col-md-4">
+            <!--Card-->
+            <div class="card keyFeaturesContainer">
+
+                <!--Card image-->
+                <div class="view overlay hm-white-light">
+                    <img src="./img/CollectData.png"  class="img-fluid " alt="" >
+                    <a href="#">
+                        <div class="mask"></div>
+                    </a>
+                </div>
+
+                <!--Card content-->
+                <div class="card-body">
+                    <!--Title-->
+                    <h4 class="card-title">Collect Data</h4>
+                    <!--Text-->
+                    <p class="card-text">Pinpoint movement accuracy, with data collection speeds of up to 60/second.</p> 
+                    <a href="#" class="btn btn-default">Get Started</a>
+                </div>
+
+            </div>
+            <!--/.Card-->
+        </div>
+    </div>
+</div>
+
+<!-- How it works -->
+<div class="container keyFeaturesContainerMargin">
+    <img class="headerText-img" src="./img/Key Features.png" alt="Key Features">
+    <hr style="width: 60%">
+    <div class="col-md-6 offset-md-3">
+    <ol>
+        <li class="featuresListBottom">
+            Create high quality spatial memory tasks without prior programming knowledge.
+        </li>
+        <li class="featuresListBottom">
+            Build custom map layouts and landmarks.
+        </li>
+        <li class="featuresListBottom">
+            Create custom experiment blocks that allow for both trial randomization and learning to criterion.
+        </li>
+        <li class="featuresListBottom">
+            Dynamically place objects/goals throughout your trial environment.
+        </li>
+        <li class="featuresListBottom">
+            Easily use your own 3D or 2D object sets.
+        </li>
+        <li class="featuresListBottom">
+            Capture accurate behavioural data up to 60 times per second output to .csv.
+        </li>
+        <li class="featuresListBottom">
+            Unleash the power of the Unity Asset store to create life-like experiences for your participants. 
+        </li>
+    </ol>
+    </div>
+</div>
+
+<!-- Get Started -->
+<div class="container worksBottom">
+    <img class="headerText-img" src="./img/getStarted.png" alt="Key Features">
+    <div class="container">
+        <div class="card keyFeaturesContainer">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card-img-bottom1">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title">Download the application</h4>
+                        <!--Text-->
+                        <p class="card-text">Click the button below to download the app. Simple as that! Take a look at our tutorial below for a step-by-step process, or take a look at the documentation.</p>
+                        <a href="./html/tutorial.html" class="btn btn-default float-right">Get Started</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="card keyFeaturesContainer">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card-img-bottom2">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title">Watch the Tutorials</h4>
+                        <!--Text-->
+                        <p class="card-text">Watch from here, or navigate over to our 'getting started' page where a detailed tutorial will guide you through the steps of setting up your own experiment using OpenMaze!</p>
+                        <a href="./html/tutorial.html" class="btn btn-default float-right">Get Started</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="card keyFeaturesContainer">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card-img-bottom3">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <!--Card content-->
+                    <div class="card-body">
+                        <!--Title-->
+                        <h4 class="card-title">Read about our latest release</h4>
+                        <!--Text-->
+                        <p class="card-text">We are constantly iterating the OpenMaze app, to bring you the most functional and useful application possible. Stay updated on our progress by taking a look at our most recent release notes.</p>
+                        <a href="./html/tutorial.html" class="btn btn-default float-right">Get Started</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Footer-->
+<footer class="stickyFooter page-footer default-color center-on-small-only">
+
+    <!--Footer Links-->
+    <div class="container-fluid ">
+        <div class="row">
+
+            <!--First column-->
+            <div class="col-md-12 footerContent">
+                <h6><a href="http://duncanlab.org/">Duncan Lab</a></h6>
+                <h6>University of Toronto, Toronto, ON M5S, Canada</h6>
+            </div>
+            <!--/.First column-->
+
+        </div>
+    </div>
+    <!--/.Footer Links-->
+    <div class="footer-copyright subFooter default-color">
+        <div class="container-fluid">
+            <p style="color: white"> © 2018 by OpenMaze</p>
+
+        </div>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
+<!-- JQuery for BS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- MDB JS  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.5/js/mdb.min.js"></script>
+</body>
+</html>
