@@ -60,36 +60,80 @@
 </nav>
 
 <div class="row" style="height: 200vh; font-family: 'Roboto', sans-serif;">
-    <div class="col-md-2" style="background-color: #F5F7FA; height: 100%; width: 100%;">
+    <div class="col-lg-2 d-none d-lg-block" style="background-color: #F5F7FA; height: 400%; width: 100%;">
         <div class="sticky" style="position: fixed; top: 20px; width: 16%">
             <b style="font-size: 20px; padding: 25px; margin-bottom: 20px">OpenMaze Doc</b>
             <hr style="opacity: 0.5; margin-top: 17px">
             <ul style="max-width: 190px; padding: 10px; margin-top: -10px" id="navbar-example3" class="nav nav-pills default-pills smooth-scroll " data-allow-hashes="true">
                 <li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
                 <li class="nav-item"><a class="nav-link" href="#config-file">Configuration File</a></li>
-                <li style="margin-left: 15px;" class="nav-item"><a class="nav-link" href="#config-file">Overview</a></li>
-                <li style="margin-left: 15px;" class="nav-item"><a class="nav-link" href="#config-file">Blocks</a></li>
-                <li style="margin-left: 15px;" class="nav-item"><a class="nav-link" href="#config-file">Trials</a></li>
-                <li style="margin-left: 15px;" class="nav-item"><a class="nav-link" href="#config-file">Goals</a></li>
-                <li style="margin-left: 15px;" class="nav-item"><a class="nav-link" href="#config-file">Landmarks</a></li>
+                <li style="margin-left: 15px;" class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+                <li style="margin-left: 15px;" class="nav-item"><a class="nav-link" href="#blocks">Blocks</a></li>
+                <li style="margin-left: 15px;" class="nav-item"><a class="nav-link" href="#trials">Trials</a></li>
+                <li style="margin-left: 15px;" class="nav-item"><a class="nav-link" href="#goals">Goals</a></li>
+                <li style="margin-left: 15px;" class="nav-item"><a class="nav-link" href="#landmarks">Landmarks</a></li>
                 <li class="nav-item"><a class="nav-link" href="#data-extraction">Tasks</a></li>
-                <li style="margin-left: 15px;" class="nav-item"><a class="nav-link" href="#config-file">Create Experiment</a></li>
-                <li style="margin-left: 15px;" class="nav-item"><a class="nav-link" href="#config-file">Add Image Trials</a></li>
-                <li style="margin-left: 15px;" class="nav-item"><a class="nav-link" href="#config-file">Add Goal Objects</a></li>
-                <li style="margin-left: 15px;" class="nav-item"><a class="nav-link" href="#config-file">Add Landmarks</a></li>
+                <li style="margin-left: 15px;" class="nav-item"><a class="nav-link" href="#create-experiment">Create Experiment</a></li>
+                <li style="margin-left: 15px;" class="nav-item"><a class="nav-link" href="#add-image-trials">Add Image Trials</a></li>
+                <li style="margin-left: 15px;" class="nav-item"><a class="nav-link" href="#add-goal-objects">Add Goal Objects</a></li>
+                <li style="margin-left: 15px;" class="nav-item"><a class="nav-link" href="#add-landmarks">Add Landmarks</a></li>
             </ul>
         </div>
     </div>
-    <div class="col-md-6" data-spy="scroll" data-target="#navbar-example3" data-offset="1">
+    <div class="col-lg-6" data-spy="scroll" data-target="#navbar-example3" data-offset="1">
         <div style="padding: 20px; margin-top: 20px">
-            <h3>Introduction</h3>
+            <h3 id="introduction">Introduction</h3>
             <p style="margin-top: 20px">The advent of 3D virtual environments has given researchers the ability to study human cognition in novel ways, providing insight into many important scientific questions. However, too often these experimental designs are stifled by lack of resources or expertise.
                 <br><br>
                 OpenMaze is an open source software package that provides and easy an intuitive platform to quickly create 3D environment tasks without programming expertise.</p>
             <hr style="opacity: 0.5; margin-top: 30px; margin-bottom: 30px">
-            <h3>Configuration File</h3>
+            <h3 id="config-file">Configuration File</h3>
             <p style="margin-top: 20px">
-                The advent of 3D virtual environments has given researchers the ability to study human cognition in novel ways, providing insight into many important scientific questions. However, too often these experimental designs are stifled by lack of resources or expertise.
+                The configuration file is the most important file in the OpenMaze codebase when it comes to designing your own experiments. Here you can change up almost everything about how OpenMaze works just by changing a few numbers or words! The following section demonstrates exactly how to accomplish this.
+            </p>
+            <!--<hr style="opacity: 0.5; margin-top: 30px; margin-bottom: 30px">-->
+
+            <!--<h4>Overview</h4>-->
+            <!--<p style="margin-top: 20px">-->
+                <!--The main components of the configuration file include a trial section that will contain all of the parameters that can be manipulated including goal objects and landmarks, which have their own sections. The order and quantity of the trials themselves are organized into blocks. This allows for simple and easy manipulation of parameters, providing you with all the resources necessary to create your ideal experiment.-->
+            <!--</p>-->
+
+            <!--<table class="table table-borderless table-hover">-->
+                <!--<thead style="border-bottom: solid 1px; border-bottom-color: #F0F0F0;">-->
+                <!--<tr>-->
+                    <!--<th scope="col">Parameter</th>-->
+                    <!--<th scope="col">Default</th>-->
+                    <!--<th scope="col">Type</th>-->
+                    <!--<th scope="col">Description</th>-->
+                <!--</tr>-->
+                <!--</thead>-->
+                <!--<tbody>-->
+                <!--<tr>-->
+                    <!--<th scope="row">1</th>-->
+                    <!--<td>Mark</td>-->
+                    <!--<td>Otto</td>-->
+                    <!--<td>@mdo</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<th scope="row">2</th>-->
+                    <!--<td>Jacob</td>-->
+                    <!--<td>Thornton</td>-->
+                    <!--<td>@channel</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<th scope="row">3</th>-->
+                    <!--<td>Larry the Bird</td>-->
+                    <!--<td>New</td>-->
+                    <!--<td>@twitter</td>-->
+                <!--</tr>-->
+                <!--</tbody>-->
+            <!--</table>-->
+
+
+            <hr style="opacity: 0.5; margin-top: 30px; margin-bottom: 30px">
+            <h4 id="blocks">Blocks</h4>
+            <p style="margin-top: 20px">
+                Blocks allow for organization and clear visualization of trial data. The order of blocks can be changed within the configuration file, which allows for easy manipulation of trial order when designing an experiment.
             </p>
 
             <table class="table table-borderless table-hover">
@@ -103,51 +147,940 @@
                 </thead>
                 <tbody>
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
+                    <th scope="row">Block Order</th>
+                    <td>1</td>
+                    <td>int</td>
+                    <td>
+                        Defines the order of the blocks
+                    </td>
                 </tr>
                 <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@channel</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry the Bird</td>
-                    <td>New</td>
-                    <td>@twitter</td>
+                    <th scope="row">Block List</th>
+                    <td>[1]</td>
+                    <td>Array</td>
+                    <td>
+                        Can be labeled to aid organization of trials, defines trial order for each block
+                    </td>
                 </tr>
                 </tbody>
             </table>
 
+            <hr style="opacity: 0.5; margin-top: 30px; margin-bottom: 30px">
+            <br>
+            <h4 id="trials">Trials</h4>
+            <p style="margin-top: 20px">
+                This section of the configuration file allows for organization of information within trials. This includes parameters that create a 3D environment tailored to your task, selection among different goal types and the timing of your trials.
+            </p>
+
+            <table class="table table-borderless table-hover">
+                <thead style="border-bottom: solid 1px; border-bottom-color: #F0F0F0;">
+                <tr>
+                    <th scope="col">Parameter</th>
+                    <th scope="col">Default</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Index</th>
+                    <td>4</td>
+                    <td>int</td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Header</th>
+                    <td>Tutorial4: Goals </td>
+                    <td>String</td>
+                    <td>
+                        Define what message you would like to have at the top left corner of the trial screen
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Time allotted</th>
+                    <td>-1</td>
+                    <td>int</td>
+                    <td>
+
+                        Here you can determine the length of each trial, in seconds or if you need to press space to complete the trial
+
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        Environment Type
+                    </th>
+                    <td>1</td>
+                    <td> int</td>
+                    <td>
+                        Select the environment type the trial should take place in
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">RandomLoc</th>
+                    <td>0</td>
+                    <td> int</td>
+                    <td>
+                        Here you can enter 1 if you would like to randomly generate your position in the environment
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">CharacterStartPos</th>
+                    <td>[-10,10]</td>
+                    <td>array
+                    </td>
+                    <td>
+                        Defines the position within the environment where you appear at the beginning of the trial
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Initial angle</th>
+                    <td>50 </td>
+                    <td>
+                        int
+                    </td>
+                    <td>
+                        Here you can choose the first view of the environment that is presented when the trial begins, rotated about the initial character position
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Time to rotate </th>
+                    <td>0.5</td>
+                    <td>int</td>
+                    <td>
+                        Enter the duration of rotation, at the beginning of the trial your view will be rotated 360 degrees around the environment
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Sides </th>
+                    <td>4</td>
+                    <td>int</td>
+                    <td>
+                        The number of sides that will be present in local environment
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Radius</th>
+                    <td>25</td>
+                    <td>int</td>
+                    <td>
+                        The radius of the local environment
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Wall height </th>
+                    <td>2</td>
+                    <td> int</td>
+                    <td>
+                        The height of the sides that were previously defined
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Wall colour     </th>
+                    <td>000000</td>
+                    <td>Hex (String)</td>
+                    <td>
+                        Define the colour of the sides using the HTML colour code
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Ground tile sides </th>
+                    <td>4</td>
+                    <td> int</td>
+                    <td>
+                        The number of tile sides you would like for the ground, enter 0 if solid ground colour is preferred
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Ground tile size </th>
+                    <td>1</td>
+                    <td>int
+                    </td>
+                    <td>
+                        Define the size of the previously mentioned ground tiles
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Ground colour</th>
+                    <td>000000</td>
+                    <td>Hex (String)</td>
+                    <td>
+                        Define the colour of the ground using HTML colour code
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Active goals</th>
+                    <td>0</td>
+                    <td>
+                        int
+                    </td>
+                    <td>
+                        Enter numbers of objects you would like to appear in the environment that will be visible and collectible
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Invisible goals</th>
+                    <td>
+                        0
+                    </td>
+                    <td>int
+                    </td>
+                    <td>
+
+                        Enter numbers of objects you would like to appear in the environment that will be invisible and collectible
+
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        Inactive goals
+                    </th>
+                    <td>0</td>
+                    <td> int</td>
+                    <td>
+                        Enter numbers of objects you would like to appear in the environment that will be visible, however not collectible
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Quota </th>
+                    <td>0</td>
+                    <td> int</td>
+                    <td>
+                        Here you can enter the total number of objects that need to be collected for the trial to be completed before the allotted time runs out
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Landmarks </th>
+                    <td>0</td>
+                    <td> int</td>
+                    <td>
+                        Enter numbers of landmarks that you would like to appear in the environment
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <hr style="opacity: 0.5; margin-top: 30px; margin-bottom: 30px">
+            <h4 id="goals">Goals</h4>
+            <p style="margin-top: 20px">
+                In this section you can define different aspects of your goal objects. From physical characteristics such as size and colour to others including location and sound. You can create a wide variety of goal objects of varying salience to suit your task.
+            </p>
+
+            <table class="table table-borderless table-hover">
+                <thead style="border-bottom: solid 1px; border-bottom-color: #F0F0F0;">
+                <tr>
+                    <th scope="col">Parameter</th>
+                    <th scope="col">Default</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Tag</th>
+                    <td>1</td>
+                    <td>int</td>
+                    <td>
+
+                        Label your item for quick reference
+
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Type </th>
+                    <td>Pickup</td>
+                    <td>String</td>
+                    <td>
+                        Define what operation you want pickup item to fulfill
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Colour</th>
+                    <td>000000</td>
+                    <td>Hex (String)</td>
+                    <td>
+
+                        Define the colour of the object using HTML colour code
+
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Location</th>
+                    <td>[0,0,0]</td>
+                    <td>Array</td>
+                    <td>
+                        Define the location of the object in the 3D environment
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Length</th>
+                    <td>1</td>
+                    <td>
+                        int
+                    </td>
+                    <td>
+                        Length of object in x-direction
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Width </th>
+                    <td>1</td>
+                    <td>int</td>
+                    <td>
+                        Length of object in y-direction
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Height</th>
+                    <td>1</td>
+                    <td>int</td>
+                    <td>
+                        Length of object in z-direction
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Initial rotation</th>
+                    <td>0</td>
+                    <td>int</td>
+                    <td>
+                        Here you can adjust the rotation of the object about its defined location
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Sound location</th>
+                    <td>Eat </td>
+                    <td>String</td>
+                    <td>
+                        Enter in sound tag that you previously stored to reference the sound
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <hr style="opacity: 0.5; margin-top: 30px; margin-bottom: 30px">
+            <h4 id="landmarks">Landmarks</h4>
+            <p style="margin-top: 20px">
+                This section allows you to define the characteristics of your landmarks. This includes parameters that regulate location, size and colour. With the ability to manipulate features of landmarks you can further define the environment to reach your desired goal.
+            </p>
+
+            <table class="table table-borderless table-hover">
+                <thead style="border-bottom: solid 1px; border-bottom-color: #F0F0F0;">
+                <tr>
+                    <th scope="col">Parameter</th>
+                    <th scope="col">Default</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Location</th>
+                    <td>[5,5,0]</td>
+                    <td>Array</td>
+                    <td>
+                        Define the location of the landmark in the 3D environment
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Length</th>
+                    <td>1</td>
+                    <td>int</td>
+                    <td>
+                        Length of the landmark in x-direction
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Width </th>
+                    <td>1</td>
+                    <td> int</td>
+                    <td>
+                        Length of landmark in the y-direction
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Height</th>
+                    <td>1</td>
+                    <td>int</td>
+                    <td>
+                        Length of the landmark in the z-direction
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Type</th>
+                    <td>Pickup </td>
+                    <td>String</td>
+                    <td>
+                        Define what operation you want pickup item to fulfill
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Colour</th>
+                    <td>000000 </td>
+                    <td>Hex (String)</td>
+                    <td>
+                        Define the colour of the landmark using HTML colour code
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Initial rotation </th>
+                    <td>0 </td>
+                    <td>int</td>
+                    <td>
+                        Here you can adjust the rotation of the landmark about its defined location
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+
+            <hr style="opacity: 0.5; margin-top: 30px; margin-bottom: 30px">
+            <h3 id="tasks">Tasks</h3>
+            <p style="margin-top: 20px">
+                The configuration file is the most important file in the OpenMaze codebase when it comes to designing your own experiments. Here you can change up almost everything about how OpenMaze works just by changing a few numbers or words! The following section demonstrates exactly how to accomplish this.
+            </p>
+            <hr style="opacity: 0.5; margin-top: 30px; margin-bottom: 30px">
+
+            <h4 id="create-experiment">Create Experiment</h4>
+            <p style="margin-top: 20px">
+                A straightforward method for creating your own experiment is to copy and paste the sample configuration file. Then change the values for the different sections including landmarks, goal objects and trials all of which are organized by blocks.
+            </p>
+
+            <hr style="opacity: 0.5; margin-top: 30px; margin-bottom: 30px">
+
+            <h4 id="add-image-trials">Add image trials
+            </h4>
+            <p style="margin-top: 20px">
+                To add an image trial, just three lines are required. The first can be used to indicate trial number and to label for your convenience. The second line should include the file location of your desired image and lastly the third line determines for how long the image will be presented.
+            </p>
+            <table class="table table-borderless table-hover">
+                <thead style="border-bottom: solid 1px; border-bottom-color: #F0F0F0;">
+                <tr>
+                    <th scope="col">Parameter</th>
+                    <th scope="col">Default</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">File location</th>
+                    <td>Tutorial1/Welcome.png</td>
+                    <td>string</td>
+                    <td>
+                        Enter the location of the image that you would like to add by referring to the file and image name
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Time allotted</th>
+                    <td>-1</td>
+                    <td>int</td>
+                    <td>
+                        Here you can determine the length of each trial, in seconds or if you need to press space to complete the trial
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <hr style="opacity: 0.5; margin-top: 30px; margin-bottom: 30px">
+
+            <h4 id="add-goal-objects">Add Goal Objects
+            </h4>
+            <p style="margin-top: 20px">
+                Goal objects can be added by simply copying and pasting the sample text in the goal data section. Make sure to add a comma after the original text, then change parameter values as desired. The object number can then be added to active, inactive and invisible goals in the required trial.
+            </p>
+            <table class="table table-borderless table-hover">
+                <thead style="border-bottom: solid 1px; border-bottom-color: #F0F0F0;">
+                <tr>
+                    <th scope="col">Parameter</th>
+                    <th scope="col">Default</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Tag</th>
+                    <td>1</td>
+                    <td>int</td>
+                    <td>
+
+                        Label your item for quick reference
+
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Type </th>
+                    <td>Pickup</td>
+                    <td>String</td>
+                    <td>
+                        Define what operation you want pickup item to fulfill
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Colour</th>
+                    <td>000000</td>
+                    <td>Hex (String)</td>
+                    <td>
+
+                        Define the colour of the object using HTML colour code
+
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Location</th>
+                    <td>[0,0,0]</td>
+                    <td>Array</td>
+                    <td>
+                        Define the location of the object in the 3D environment
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Length</th>
+                    <td>1</td>
+                    <td>
+                        int
+                    </td>
+                    <td>
+                        Length of object in x-direction
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Width </th>
+                    <td>1</td>
+                    <td>int</td>
+                    <td>
+                        Length of object in y-direction
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Height</th>
+                    <td>1</td>
+                    <td>int</td>
+                    <td>
+                        Length of object in z-direction
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Initial rotation</th>
+                    <td>0</td>
+                    <td>int</td>
+                    <td>
+                        Here you can adjust the rotation of the object about its defined location
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Sound location</th>
+                    <td>Eat </td>
+                    <td>String</td>
+                    <td>
+                        Enter in sound tag that you previously stored to reference the sound
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+
+            <hr style="opacity: 0.5; margin-top: 30px; margin-bottom: 30px">
+
+            <h4 id="add-landmarks">Add Landmarks
+            </h4>
+            <p style="margin-top: 20px">
+                Landmarks can be added by simply copying and pasting the sample text in the landmark data section. Make sure to add a comma after the original text, then change parameter values as desired. The landmark number can then be added under the landmark parameter in the required trial.
+            </p>
+
+            <table class="table table-borderless table-hover">
+                <thead style="border-bottom: solid 1px; border-bottom-color: #F0F0F0;">
+                <tr>
+                    <th scope="col">Parameter</th>
+                    <th scope="col">Default</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Location</th>
+                    <td>[-60,-60, 15]</td>
+                    <td>Array</td>
+                    <td>
+                        Define the location of the landmark in the 3D environment
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Length</th>
+                    <td>30</td>
+                    <td>int</td>
+                    <td>
+                        Length of the landmark in x-direction
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Width </th>
+                    <td>45</td>
+                    <td> int</td>
+                    <td>
+                        Length of landmark in the y-direction
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Height</th>
+                    <td>30</td>
+                    <td>int</td>
+                    <td>
+                        Length of the landmark in the z-direction
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Type</th>
+                    <td>Sphere </td>
+                    <td>String</td>
+                    <td>
+                        Here you can select a 3D shape to be used as the landmark
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Colour</th>
+                    <td>ff0000</td>
+                    <td>Hex (String)</td>
+                    <td>
+                        Define the colour of the landmark using HTML colour code
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Initial rotation </th>
+                    <td>50</td>
+                    <td>int</td>
+                    <td>
+                        Here you can adjust the rotation of the landmark about its defined location
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </div>
     </div>
-    <div class="col-md-4" style="background-color: #212D3B; height: 100%; width: 100%; ">
+    <div class="col-lg-4 d-none d-lg-block" style="background-color: #212D3B; width: 100%; height:430%">
+        <!--<div class="GoalObjects" style="padding: 20px; margin-top: 20px">-->
+            <!--<h3 style="color: white">Overview</h3>-->
+            <!--<br>-->
+            <!--<p style="color: white; opacity: 0.8; font-size: 15px">Example of a complete config file</p>-->
+            <!--<div style="background-color: #1C2631; border-radius: 5px; margin-top: -10px">-->
+                <!--<div style="padding: 10px; color: white; opacity: 0.8;">-->
+
+                    <!--[{<br>-->
+                    <!--&nbsp;&nbsp;"OutputTimesPerSecond": 30,<br>-->
+                    <!--&nbsp;&nbsp;"CharacterData": {<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;"Height": 1.5,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;"MovementSpeed": 10.0,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;"RotationSpeed": 100.0,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;"DistancePickup": 2,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;"GoalRotationSpeed": 1<br>-->
+                    <!--&nbsp;&nbsp;},<br>-->
+                    <!--&nbsp;&nbsp;"OutputFile": "temp.csv",<br>-->
+                    <!--&nbsp;&nbsp;"BlockOrder" : [1],<br>-->
+                    <!--<br>-->
+                    <!--&nbsp;&nbsp;"BlockList" : [<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;{<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"BlockName" : "1 - Instructions",<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Notes" : "n/a",<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"TrialOrder": [<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1,1,1,1,1,1,1,1,1,1<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;]<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;}<br>-->
+                    <!--&nbsp;&nbsp;],<br>-->
+                    <!--&nbsp;&nbsp;"TrialData": [<br>-->
+
+                    <!--&nbsp;&nbsp;&nbsp;{<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"4" : "3D Trial 1",<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Index": 4,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Header": "Tutorial 4: Goals",<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"TimeAllotted" : 100,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"EnvironmentType": 14,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"RandomLoc" : 0,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"CharacterStartPos" : [-10, 10],<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"InitialAngle" : 50,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"TimeToRotate": 0.5,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Sides": 4,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Radius": 25,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"WallHeight" : 2,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"WallColor": "000000",<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"GroundTileSides": 4,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"GroundTileSize": 1.0,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"GroundColor": "000000",<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"ActiveGoals" : [1],<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"InvisibleGoals" : [],<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"InactiveGoals" : [],<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Quota": 1,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"LandMarks" :[]<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;}<br>-->
+                    <!--&nbsp;&nbsp;],<br>-->
+                    <!--&nbsp;&nbsp;"Goals": [<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;{<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Tag": "Food",<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Type": "Cube",<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Color": "ff0000",<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Location": [0,0,0],<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Length": 2,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Width": 2,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Height": 2,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"InitialRotation": 90,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"SoundLocation": "eat"<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;},<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;{<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Tag": "Food",<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Type": "2DImageDisplayer",<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"ImageLoc" : "Tutorial4/Food.png",<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Color": "ffffff",<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Location": [10,10,0],<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Length": 2,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Width": 2,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Height": 2,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"SoundLocation": "eat"<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;}<br>-->
+                    <!--<br>-->
+                    <!--&nbsp;&nbsp;],<br>-->
+                    <!--&nbsp;&nbsp;"Landmarks": [<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;{<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Location": [5, 5, 0],<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Length": 1.0,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Width": 1.0,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Height": 5.0,<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"Type": "Cube",<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp; "Color": "ff0000",<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;&nbsp;"InitialRotation": 75<br>-->
+                    <!--&nbsp;&nbsp;&nbsp;}<br>-->
+                    <!--&nbsp;&nbsp;]<br>-->
+                    <!--&nbsp;}<br>-->
+                    <!--&nbsp;]<br>-->
+
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <div class="GoalObjects" style="padding: 20px; margin-top: 20px">
+            <h3 style="color: white">Code Examples</h3>
+            <br>
+            <p style="color: white; opacity: 0.8; font-size: 15px">Here you will find examples of code blocks</p>
+            <div style="background-color: #1C2631; border-radius: 5px; margin-top: -10px">
+                <div style="padding: 10px; color: white; opacity: 0.8;">
+
+                    "JSON Object" : ,<br>
+                    &nbsp;&nbsp;"Example" : [<br>
+                    &nbsp;&nbsp;&nbsp;{<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;"Variable 1" : "string",<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;"Variable 2" : int,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;"Variable 3": ["array"]<br>
+                    &nbsp;&nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;],<br>
+                    <br>
+
+                </div>
+            </div>
+
+        </div>
+        <br><br><br>
+        <div class="GoalObjects" style="padding: 20px; margin-top: 20px">
+            <h3 style="color: white">Blocks</h3>
+            <br>
+            <p style="color: white; opacity: 0.8; font-size: 15px">Example of a block object</p>
+            <div style="background-color: #1C2631; border-radius: 5px; margin-top: -10px">
+                <div style="padding: 10px; color: white; opacity: 0.8;">
+
+                    "BlockOrder" : [1],<br>
+                    &nbsp;&nbsp;"BlockList" : [<br>
+                    &nbsp;&nbsp;&nbsp;{<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;"BlockName" : "1 - Instructions",<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;"Notes" : "n/a",<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;"TrialOrder": [<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;]<br>
+                    &nbsp;&nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;],<br>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+        <div class="GoalObjects" style="padding: 20px; margin-top: 20px">
+            <h3 style="color: white">Trials</h3>
+            <br>
+            <p style="color: white; opacity: 0.8; font-size: 15px">Example of a trial object</p>
+            <div style="background-color: #1C2631; border-radius: 5px; margin-top: -10px">
+                <div style="padding: 10px; color: white; opacity: 0.8;">
+
+                    "TrialData": [<br>
+
+                    &nbsp;&nbsp;{<br>
+                    &nbsp;&nbsp;&nbsp;"4" : "3D Trial 1",<br>
+                    &nbsp;&nbsp;&nbsp;"Index": 4,<br>
+                    &nbsp;&nbsp;&nbsp;"Header": "Tutorial 4: Goals",<br>
+                    &nbsp;&nbsp;&nbsp;"TimeAllotted" : 100,<br>
+                    &nbsp;&nbsp;&nbsp;"EnvironmentType": 14,<br>
+                    &nbsp;&nbsp;&nbsp;"RandomLoc" : 0,<br>
+                    &nbsp;&nbsp;&nbsp;"CharacterStartPos" : [-10, 10],<br>
+                    &nbsp;&nbsp;&nbsp;"InitialAngle" : 50,<br>
+                    &nbsp;&nbsp;&nbsp;"TimeToRotate": 0.5,<br>
+                    &nbsp;&nbsp;&nbsp;"Sides": 4,<br>
+                    &nbsp;&nbsp;&nbsp;"Radius": 25,<br>
+                    &nbsp;&nbsp;&nbsp;"WallHeight" : 2,<br>
+                    &nbsp;&nbsp;&nbsp;"WallColor": "000000",<br>
+                    &nbsp;&nbsp;&nbsp;"GroundTileSides": 4,<br>
+                    &nbsp;&nbsp;&nbsp;"GroundTileSize": 1.0,<br>
+                    &nbsp;&nbsp;&nbsp;"GroundColor": "000000",<br>
+                    &nbsp;&nbsp;&nbsp;"ActiveGoals" : [1],<br>
+                    &nbsp;&nbsp;&nbsp;"InvisibleGoals" : [],<br>
+                    &nbsp;&nbsp;&nbsp;"InactiveGoals" : [],<br>
+                    &nbsp;&nbsp;&nbsp;"Quota": 1,<br>
+                    &nbsp;&nbsp;&nbsp;"LandMarks" :[]<br>
+                    &nbsp;&nbsp;}<br>
+                    ],<br>
+
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
         <div class="GoalObjects" style="padding: 20px; margin-top: 20px">
             <h3 style="color: white">Goals</h3>
             <br>
             <p style="color: white; opacity: 0.8; font-size: 15px">Example of a goal object</p>
             <div style="background-color: #1C2631; border-radius: 5px; margin-top: -10px">
                 <div style="padding: 10px; color: white; opacity: 0.8;">
-                    “GOAL DATA” : “GOAL DATA——*********——GOAL DATA”, <br>
-                    <br>
+
                     &nbsp; “Goals”: [ <br>
                     &nbsp; &nbsp; { <br>
-                    &nbsp; &nbsp; &nbsp; &nbsp; “Pickup 1” : “Orange Box”, <br>
-                    &nbsp; &nbsp; &nbsp; &nbsp; “Type”: “Pickup”, <br>
-                    &nbsp; &nbsp; &nbsp; &nbsp; “Tag”: “1”, <br>
-                    &nbsp; &nbsp; &nbsp; &nbsp; “Color”: “F26406”, <br>
-                    &nbsp; &nbsp; &nbsp; &nbsp; “SoundLocation”: “eat”, <br>
-                    &nbsp; &nbsp; &nbsp; &nbsp; “Location”: [10,15,0.5], <br>
-                    &nbsp; &nbsp; &nbsp; &nbsp; “Length”: 1, <br>
-                    &nbsp; &nbsp; &nbsp; &nbsp; “Width”: 1, <br>
-                    &nbsp; &nbsp; &nbsp; &nbsp; “Height”: 1, <br>
-                    &nbsp; &nbsp; &nbsp; &nbsp; “GoalRotation”: 0 <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “Tag”: “Food”, <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “Type”: “Cube”, <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “Color”: “ff0000”, <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “Location”: [0,0,0], <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “Length”: 2, <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “Width”: 2, <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “Height”: 2, <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “InitialRotation”: 90 <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “SoundLocation”: "eat" <br>
                     &nbsp; &nbsp;} <br>
                     &nbsp;], <br>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br><br>
+        <br><br><br><br><br><br><br><br>
+        <div class="GoalObjects" style="padding: 20px; margin-top: 20px">
+            <h3 style="color: white">Landmarks</h3>
+            <br>
+            <p style="color: white; opacity: 0.8; font-size: 15px">Example of a landmark object</p>
+            <div style="background-color: #1C2631; border-radius: 5px; margin-top: -10px">
+                <div style="padding: 10px; color: white; opacity: 0.8;">
+
+                    "Landmarks": [<br>
+                    &nbsp;&nbsp;{<br>
+                    &nbsp;&nbsp;&nbsp;"Location": [5, 5, 0],<br>
+                    &nbsp;&nbsp;&nbsp;"Length": 1.0,<br>
+                    &nbsp;&nbsp;&nbsp;"Width": 1.0,<br>
+                    &nbsp;&nbsp;&nbsp;"Height": 5.0,<br>
+                    &nbsp;&nbsp;&nbsp;"Type": "Cube",<br>
+                    &nbsp;&nbsp;&nbsp;"Color": "ff0000",<br>
+                    &nbsp;&nbsp;&nbsp;"InitialRotation": 75<br>
+                    &nbsp;&nbsp;}<br>
+                    ]<br>
+
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="GoalObjects" style="padding: 20px; margin-top: 20px">
+            <h3 style="color: white">Image Trials</h3>
+            <br>
+            <p style="color: white; opacity: 0.8; font-size: 15px">Example of an image trial</p>
+            <div style="background-color: #1C2631; border-radius: 5px; margin-top: -10px">
+                <div style="padding: 10px; color: white; opacity: 0.8;">
+
+                    "TrialData": [<br>
+                    &nbsp;&nbsp;{<br>
+                    &nbsp;&nbsp;&nbsp;"1" : "Welcome",<br>
+                    &nbsp;&nbsp;&nbsp;"FileLocation": "Tutorial1/Welcome.png",<br>
+                    &nbsp;&nbsp;&nbsp;"TimeAllotted": -1<br>
+                    &nbsp;&nbsp;},<br>
+                    ]<br>
+
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br>
+        <div class="GoalObjects" style="padding: 20px; margin-top: 20px">
+            <h3 style="color: white">Add Goal Objects</h3>
+            <br>
+            <p style="color: white; opacity: 0.8; font-size: 15px">Example of adding a goal object</p>
+            <div style="background-color: #1C2631; border-radius: 5px; margin-top: -10px">
+                <div style="padding: 10px; color: white; opacity: 0.8;">
+
+                    &nbsp; “Goals”: [ <br>
+                    &nbsp; &nbsp; { <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “Tag”: “Food”, <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “Type”: “Cube”, <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “Color”: “ff0000”, <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “Location”: [0,0,0], <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “Length”: 2, <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “Width”: 2, <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “Height”: 2, <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “InitialRotation”: 90 <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “SoundLocation”: "eat" <br>
+                    &nbsp; &nbsp;} <br>
+                    &nbsp; &nbsp; { <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “Tag”: “Food”, <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “Type”: “2DImageDisplayer”, <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; "ImageLoc" : "Tutorial4/Food.png",<br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “Color”: “ffffff”, <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “Location”: [10,10,0], <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “Length”: 2, <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “Width”: 2, <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “Height”: 2, <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; “SoundLocation”: "eat" <br>
+                    &nbsp; &nbsp;} <br>
+                    &nbsp;], <br>
+
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="GoalObjects" style="padding: 20px; margin-top: 20px">
+            <h3 style="color: white">Add Landmark Objects</h3>
+            <br>
+            <p style="color: white; opacity: 0.8; font-size: 15px">Example of adding a landmark object</p>
+            <div style="background-color: #1C2631; border-radius: 5px; margin-top: -10px">
+                <div style="padding: 10px; color: white; opacity: 0.8;">
+                    "Landmarks": [<br>
+                    &nbsp;&nbsp;{<br>
+                    &nbsp;&nbsp;&nbsp;"Landmark 1" : "Red Sphere", <br>
+                    &nbsp;&nbsp;&nbsp;"Location": [-60,-60, 15],<br>
+                    &nbsp;&nbsp;&nbsp;"Length": 30.0,<br>
+                    &nbsp;&nbsp;&nbsp;"Width": 45.0,<br>
+                    &nbsp;&nbsp;&nbsp;"Height": 30.0,<br>
+                    &nbsp;&nbsp;&nbsp;"Type": "Sphere",<br>
+                    &nbsp;&nbsp;&nbsp;"Color": "ff0000",<br>
+                    &nbsp;&nbsp;&nbsp;"InitialAngle": 50<br>
+                    &nbsp;&nbsp;},<br>
+                    &nbsp;&nbsp;{<br>
+                    &nbsp;&nbsp;&nbsp;"Landmark 2" : "Blue Cube", <br>
+                    &nbsp;&nbsp;&nbsp;"Location": [60,60,15],<br>
+                    &nbsp;&nbsp;&nbsp;"Length": 30.0,<br>
+                    &nbsp;&nbsp;&nbsp;"Width": 30.0,<br>
+                    &nbsp;&nbsp;&nbsp;"Height": 30.0,<br>
+                    &nbsp;&nbsp;&nbsp;"Type": "Cube",<br>
+                    &nbsp;&nbsp;&nbsp;"Color": "0000ff",<br>
+                    &nbsp;&nbsp;&nbsp;"InitialAngle": 50<br>
+                    &nbsp;&nbsp;}<br>
+                    ]<br>
+
                 </div>
             </div>
         </div>
